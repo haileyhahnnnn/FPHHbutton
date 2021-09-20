@@ -3,6 +3,7 @@ import { html, css, LitElement } from 'lit';
 export class FphhbuttonfpHhButton extends LitElement {
   static get styles() {
     return css`
+<<<<<<< HEAD
     <!DOCTYPE html>
     <html>
     <head>
@@ -58,3 +59,37 @@ export class FphhbuttonfpHhButton extends LitElement {
     `;
   }
 }
+=======
+      :host {
+        display: block;
+        padding: 25px;
+        color: var(--fphhbuttonfp-hh-button-text-color, #000);
+      }
+    `;
+  }
+
+  static get properties() {
+    return {
+      title: { type: String },
+      counter: { type: Number },
+    };
+  }
+
+  constructor() {
+    super();
+    this.title = 'Hey there';
+    this.counter = 5;
+  }
+
+  __increment() {
+    this.counter += 1;
+  }
+
+  render() {
+    return html`
+      <h2>${this.title} Nr. ${this.counter}!</h2>
+      <button @click=${this.__increment}>increment</button>
+    `;
+  }
+}
+>>>>>>> ef07439e4dd2b38c5bee087a1b5f3be8d4619600
