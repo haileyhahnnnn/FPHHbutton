@@ -14,7 +14,7 @@ export class FphhbuttonfpHhButton extends LitElement {
         border-radius: 30px;
         border-width: 1px;
         text-decoration: none;
-        background-color: lightgrey;
+        background-color: red;
         padding: 15px 25px 15px 25px;
         font-size: 20px;
         color: black;
@@ -22,7 +22,7 @@ export class FphhbuttonfpHhButton extends LitElement {
       }
       a:hover, a:focus {
         color: white;
-        background-color: green;
+        background-color: grey;
         transition: 0.2s;
       }
     `;
