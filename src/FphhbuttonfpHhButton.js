@@ -1,3 +1,4 @@
+//importing elements for CTA Button
 import { html, css, LitElement } from 'lit';
 import "@lrnwebcomponents/simple-icon/lib/simple-icon-lite.js";
 import "@lrnwebcomponents/simple-icon/lib/simple-icons.js";
@@ -7,15 +8,15 @@ export class FphhbuttonfpHhButton extends LitElement {
     return css`
       :host {
         display: block;
-        padding: 25px;
+        padding: 20px;
         color: var(--call-to-action-button, #000);
       }
       a {
-        border-radius: 30px;
-        border-width: 1px;
+        border-radius: 25px;
+        border-width: 2px;
         text-decoration: none;
         background-color: red;
-        padding: 15px 25px 15px 25px;
+        padding: 10px 20px 10px 20px;
         font-size: 20px;
         color: black;
         transition: 0.2s;
@@ -33,6 +34,7 @@ export class FphhbuttonfpHhButton extends LitElement {
       link: { type: String },
       title: { type: String },
       icon: { type: String },
+  disabled: { type: Boolean, reflect: true}, 
     };
   }
 
@@ -40,7 +42,8 @@ export class FphhbuttonfpHhButton extends LitElement {
     super();
     this.link = 'https://www.apple.com/apple-music/';
     this.title = 'CLick for Apple';
-    this.icon = false;
+    this.icon = 'save';
+this.disabled = false;
   }
 
   __click(e) {
