@@ -20,3 +20,5 @@ Similarities and Differences with our implementations
 Differences in our implimentations
 -The comparison group displayed 5 buttons on their website
 -Their website utilizes more than one icon
+
+Our group plans to impliment a disable button on our website, as well as a shadow feature to enhance the contrast of our button from the background. 
