@@ -12,3 +12,11 @@ Sunday
 - met up in person to work on the code and fix up any problems we were having 
 - had a hard time getting the icon to load in right 
 - created a whole new and imporved button! 
+
+Similarities and Differences with our implementations
+-The group we compared our code with linked their URL to their button the same way our group did
+-We both utlized the hover function
+
+Differences in our implimentations
+-The comparison group displayed 5 buttons on their website
+-Their website utilizes more than one icon
