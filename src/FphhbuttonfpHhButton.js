@@ -1,7 +1,7 @@
-//importing elements for CTA Button
+// importing elements for CTA Button
 import { html, css, LitElement } from 'lit';
-import "@lrnwebcomponents/simple-icon/lib/simple-icon-lite.js";
-import "@lrnwebcomponents/simple-icon/lib/simple-icons.js";
+import '@lrnwebcomponents/simple-icon/lib/simple-icon-lite.js';
+import '@lrnwebcomponents/simple-icon/lib/simple-icons.js';
 
 export class FphhbuttonfpHhButton extends LitElement {
   static get styles() {
@@ -14,18 +14,22 @@ export class FphhbuttonfpHhButton extends LitElement {
       a {
         border-radius: 25px;
         border-width: 2px;
-        text-decoration: none;
+        text-decoration: white underline;
         background-color: red;
         padding: 10px 20px 10px 20px;
         font-size: 20px;
         color: black;
         transition: 0.2s;
       }
-      a:hover, a:focus {
-        color: white;
-        background-color: grey;
-        transition: 0.2s;
+      a:hover{ 
+        background-color: white;
+        font-weight: bold;
       }
+      a:focus {
+        color: white;
+        background-color: black;
+        transition: 0.2s;
+      }  
     `;
   }
 
@@ -34,7 +38,7 @@ export class FphhbuttonfpHhButton extends LitElement {
       link: { type: String },
       title: { type: String },
       icon: { type: String },
-  disabled: { type: Boolean, reflect: true}, 
+      disabled: { type: Boolean, reflect: true },
     };
   }
 
@@ -43,9 +47,9 @@ export class FphhbuttonfpHhButton extends LitElement {
     this.link = 'https://www.apple.com/apple-music/';
     this.title = 'CLick for Apple';
     this.icon = 'save';
-this.disabled = false;
+    this.disabled = false;
+    this.addEventListener = 'CTAButton';
   }
-
   __click(e) {
     if (this.editMode) {
       e.preventDefault();
@@ -56,8 +60,15 @@ this.disabled = false;
 
   render() {
     return html`
-      <a href="${this.link}" @click=${this.__click} target="_blank" rel="noopener">
-        ${this.icon ? html`<simple-icon-lite icon="${this.icon}"></simple-icon-lite>` : ``}
+      <a
+        href="${this.link}"
+        @click=${this.__click}
+        target="_blank"
+        rel="noopener"
+      >
+        ${this.icon
+          ? html`<simple-icon-lite icon="${this.icon}"></simple-icon-lite>`
+          : ``}
         ${this.title}
         <slot></slot>
       </a>
