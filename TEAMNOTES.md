@@ -23,3 +23,13 @@ Sunday October 3, 2021
 - looked over the final steps to see what else needed to be fixed
 - Met VIA FaceTime in the afternoon to go over the project together and finalize all of our work
 - Ready to hand everything in after we learn to publish to NPM together 
+
+Similarities and Differences with our implementations
+-The group we compared our code with linked their URL to their button the same way our group did
+-We both utlized the hover function
+
+Differences in our implimentations
+-The comparison group displayed 5 buttons on their website
+-Their website utilizes more than one icon
+
+Our group plans to impliment a disable button on our website, as well as a shadow feature to enhance the contrast of our button from the background. 
