@@ -12,3 +12,14 @@ Sunday
 - met up in person to work on the code and fix up any problems we were having 
 - had a hard time getting the icon to load in right 
 - created a whole new and imporved button! 
+
+Friday:
+- met on FaceTime to talk about what the next steps are and what we should be looking at to prepare for the final touches of the project
+- talked about strategy and what we should be working on till we meet next 
+- next scheduled meet up time is for Sunday October 3rd to look over the last steps of our project 
+
+Sunday October 3, 2021 
+- Talked VIA text to see what progress we both made
+- looked over the final steps to see what else needed to be fixed
+- Met VIA FaceTime in the afternoon to go over the project together and finalize all of our work
+- Ready to hand everything in after we learn to publish to NPM together 
