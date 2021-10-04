@@ -1,9 +1,9 @@
 {
-  "name": "fphhbuttonfp-hh-button",
+  "name": "@IST-402-Group-1/FPHHbutton",
   "description": "Webcomponent fphhbuttonfp-hh-button following open-wc recommendations",
   "license": "MIT",
   "author": "fphhbuttonfp-hh-button",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "module": "index.js",
   "scripts": {
@@ -54,5 +54,9 @@
       "eslint --fix",
       "prettier --write"
     ]
+  }
+  "private": false,
+  "publishConfig": {
+    "access": "public"
   }
 }
