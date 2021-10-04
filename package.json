@@ -1,5 +1,5 @@
 {
-  "name": "@IST-402-Group-1/FPHHbutton",
+  "name": "@ist-402-group-1/fphhbutton",
   "description": "Webcomponent fphhbuttonfp-hh-button following open-wc recommendations",
   "license": "MIT",
   "author": "fphhbuttonfp-hh-button",
@@ -54,7 +54,7 @@
       "eslint --fix",
       "prettier --write"
     ]
-  }
+  },
   "private": false,
   "publishConfig": {
     "access": "public"
