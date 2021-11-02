@@ -38,54 +38,70 @@ export class FphhbuttonfpHhButton extends LitElement {
     `;
   }
 
-  static get properties() {
-    return {
-      link: { type: String },
-      title: { type: String },
-      icon: { type: String },
-      disabled: { type: Boolean, reflect: true },
-      play: { type: Boolean, reflect: true },
-    };
-  }
+ static get properties() {
+    return {
+      link: {type: String, reflect: true},
+      iconEnable: {type: Boolean, reflect: true},
+      icon: {type: String, reflect: true},
+      title: {type: String, reflect: true},
+      isDisabled: {type: Boolean, reflect: true}
+    };
+  }
 
-  constructor() {
-    super();
-    this.clicked = false;
-    this.link = 'https://www.apple.com/apple-music/';
-    this.title = 'Click For Apple';
-    this.icon = 'save';
-    this.disabled = false;
-    this.addEventListener = 'CTAButton';
-  }
+  constructor() {
+    super();
+    this.link = " static get properties() {
+    return {
+      link: {type: String, reflect: true},
+      iconEnable: {type: Boolean, reflect: true},
+      icon: {type: String, reflect: true},
+      title: {type: String, reflect: true},
+      isDisabled: {type: Boolean, reflect: true}
+    };
+  }
 
-  __click(e) {
-    if (this.editMode) {
-      e.preventDefault();
-      e.stopPropagation();
-      e.stopImmediatePropagation();
-      this.play = true;
-    }
-  }
+  constructor() {
+    super();
+    this.link = "https://science.psu.edu/chem";
+    this.iconEnable = false;
+    this.title = "Click Here";
+    this.icon = "shopping-cart";
+    this.isDisabled = false;
+  }
 
-  render() {
-    return html`
-      <div style="display: flex; justify-content: center;">
-      
-      <a
-        href="${this.link}"
-        @click=${this.__click}
-        target="_blank"
-        rel="noopener"
-      >
-        ${
-          this.icon
-            ? html`<simple-icon-lite icon="${this.icon}"></simple-icon-lite>`
-            : ``
-        }
-        ${this.title}
-        <slot></slot>
-        </div>
-      </a>
-    `;
-  }
+  
+
+  render() {
+    return html`
+      <!--html button tag that also is a link and opens website in new tab-->
+      
+      <button ?disabled=${this.isDisabled} type="button" name="FphhbuttonfpHhButton" class="button" onclick="window.open('${this.link}', '_blank')">
+      ${this.iconEnable ?
+      html`<simple-icon-lite icon="${this.icon}"></simple-icon-lite>`: html ``
+      }
+      ${this.title}
+      </button>
+      `;
+  }
+}";
+    this.iconEnable = false;
+    this.title = "Click Here";
+    this.icon = "shopping-cart";
+    this.isDisabled = false;
+  }
+
+  
+
+  render() {
+    return html`
+      <!--html button tag that also is a link and opens website in new tab-->
+      
+      <button ?disabled=${this.isDisabled} type="button" name="shop-button" class="button" onclick="window.open('${this.link}', '_blank')">
+      ${this.iconEnable ?
+      html`<simple-icon-lite icon="${this.icon}"></simple-icon-lite>`: html ``
+      }
+      ${this.title}
+      </button>
+      `;
+  }
 }
